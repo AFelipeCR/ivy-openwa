@@ -1,0 +1,23 @@
+{
+   "compilerOptions": {
+     "rootDir": "./src",
+     "outDir": "./dist",
+      "lib": [
+         "es2023",
+         "DOM",
+         "DOM.Iterable"
+      ],
+      "types": [
+         "node"
+      ],
+      "declaration": true,
+      "target": "es2022",
+      "module": "nodenext",
+      "moduleResolution": "nodenext",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "sourceMap": true
+   },
+  "exclude": ["node_modules", "dist", "dashboard"],
+  "include": ["src", "test"]
+}
