@@ -4,6 +4,7 @@ import { MessagesService } from './services/messages.service';
 import { SessionsService } from './services/sessions.service';
 import { WebhooksService } from './services/webhooks.service';
 import { OpenWAConfig } from './interfaces/options.interface';
+import { GroupsService } from './services/groups.service';
 
 @Global()
 @Module({})
@@ -19,12 +20,14 @@ export class OpenWaModule {
                 BaseHttpService,
                 SessionsService,
                 WebhooksService,
-                MessagesService
+                MessagesService,
+                GroupsService,
             ],
             exports: [
                 SessionsService, 
                 WebhooksService, 
-                MessagesService
+                MessagesService,
+                GroupsService,
             ],
         };
     }
@@ -46,12 +49,14 @@ export class OpenWaModule {
                 BaseHttpService,
                 SessionsService,
                 WebhooksService,
-                MessagesService
+                MessagesService,
+                GroupsService,
             ],
             exports: [
                 SessionsService, 
                 WebhooksService, 
-                MessagesService
+                MessagesService,
+                GroupsService,
             ],
         };
     }
